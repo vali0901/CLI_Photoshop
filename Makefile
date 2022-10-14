@@ -1,11 +1,11 @@
-OBJ = image_editor incarcare aplicare selectare decupare rotire salvare diverse
+OBJ = main incarcare aplicare selectare decupare rotire salvare diverse
 HDS = ./include/incarcare.h ./include/aplicare.h ./include/selectare.h ./include/decupare.h ./include/rotire.h ./include/salvare.h ./include/diverse.h
 
 build: $(OBJ)
-	gcc ./bin/*.o -o image_editor -lm
+	gcc ./bin/*.o -o main -lm
 
-image_editor: image_editor.c $(HDS)
-	gcc -c image_editor.c -o ./bin/image_editor.o
+main: main.c $(HDS)
+	gcc -c main.c -o ./bin/main.o
 
 incarcare: ./src/incarcare.c
 	gcc -c ./src/incarcare.c -o ./bin/incarcare.o
