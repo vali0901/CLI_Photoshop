@@ -1,4 +1,4 @@
-# Title
+# CLI_Photoshop
 
 This project represents an "image editor" in C for [ppm and pgm images](http://paulbourke.net/dataformats/ppm/). This
 image editor allows you to edit one image at the time; after you load it, you
